@@ -3,6 +3,7 @@ import 'package:logger/logger.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:otpless_flutter/otpless_flutter.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -207,11 +208,11 @@ class _LoginScreenState extends State<LoginScreen> {
                               ),
                             ),
                             SizedBox(width: 15.0),
-                            Icon(
+                            FaIcon(
                               size: 30,
                               color: Colors.green,
-                              Icons.whatsapp_outlined,
-                            )
+                              FontAwesomeIcons.whatsapp,
+                            ),
                           ],
                         ),
                       ),
